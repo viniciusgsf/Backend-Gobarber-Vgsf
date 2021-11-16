@@ -18,7 +18,7 @@ describe('ResetPasswordService', () => {
             fakeUserTokensRepository = new FakeUserTokensRepository();
             fakeHashProvider = new FakeHashProvider();
 
-            const resetPassword = new ResetPasswordService(
+            resetPassword = new ResetPasswordService(
                 fakeUsersRepository,
                 fakeUserTokensRepository,
                 fakeHashProvider
